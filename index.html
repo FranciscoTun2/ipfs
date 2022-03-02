@@ -3,17 +3,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Passport Image</title>
-    
-
   </head>
   <body>
     <h1>Upload Passport Image</h1>
     <input type="file" name="file" id="fileinput">
     <button id="upload">Upload</button>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script> -->
+    <br>
+    <a href="" id="linkIPFS" target="_blank">
+      <label id="upload-status"></label>
+    </a>
+
+    <h1>Delete File to Pinata</h1>
+    <input type="text" name="hash" id="hash">
+    <button id="delete">Delete</button>
+    <br>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
     <script type="module" src="js/upload_ipfs.js"></script>
   </body>
 </html>
